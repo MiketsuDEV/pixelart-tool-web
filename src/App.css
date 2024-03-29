@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'PixelFont';
+  src: local('PKMN-Mystery-Dungeon'), url(./fonts/PKMN-Mystery-Dungeon.ttf), format('truetype');
+}
+body, html{
+  font-family: 'PixelFont';
+}
+
+.titlePage{
+  display: grid;
+  grid-template: 100px 100px 100px / 100px 100px 100px;
+  text-align:center;
+}
+.titlePage > div{
+  border: 1px solid black;
+}
+.title{
+  font-size: 64px;
+}
+#left{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  background-color: green;
+  
+}
+#center{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  background-color: red;
+}
+#rigth{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  background-color: green;
+}
